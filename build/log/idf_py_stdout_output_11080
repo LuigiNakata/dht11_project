@@ -1,0 +1,875 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:6276
+load:0x40078000,len:15748
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3860
+entry 0x4008063c
+[0;32mI (31) boot: ESP-IDF v5.4.1 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time May 20 2025 16:22:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (32) boot: chip revision: v3.0[0m
+[0;32mI (35) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (39) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (46) boot: Enabling RNG early entropy source...[0m
+[0;32mI (51) boot: Partition Table:[0m
+[0;32mI (53) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (60) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (66) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (73) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (79) boot: End of partition table[0m
+[0;32mI (82) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=09b6ch ( 39788) map[0m
+[0;32mI (103) esp_image: segment 1: paddr=00019b94 vaddr=3ff80000 size=0001ch (    28) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=00019bb8 vaddr=3ffb0000 size=02314h (  8980) load[0m
+[0;32mI (111) esp_image: segment 3: paddr=0001bed4 vaddr=40080000 size=04144h ( 16708) load[0m
+[0;32mI (121) esp_image: segment 4: paddr=00020020 vaddr=400d0020 size=13d54h ( 81236) map[0m
+[0;32mI (150) esp_image: segment 5: paddr=00033d7c vaddr=40084144 size=08af0h ( 35568) load[0m
+[0;32mI (170) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (171) boot: Disabling RNG early entropy source...[0m
+[0;32mI (181) cpu_start: Multicore app[0m
+[0;32mI (189) cpu_start: Pro cpu start user code[0m
+[0;32mI (189) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (189) app_init: Application information:[0m
+[0;32mI (189) app_init: Project name:     dht11_project[0m
+[0;32mI (194) app_init: App version:      1[0m
+[0;32mI (197) app_init: Compile time:     May 20 2025 16:21:51[0m
+[0;32mI (202) app_init: ELF file SHA256:  f1da0c18c...[0m
+[0;32mI (207) app_init: ESP-IDF:          v5.4.1[0m
+[0;32mI (210) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (214) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (218) efuse_init: Chip rev:         v3.0[0m
+[0;32mI (222) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (228) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (233) heap_init: At 3FFB2BD0 len 0002D430 (181 KiB): DRAM[0m
+[0;32mI (239) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (244) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (250) heap_init: At 4008CC34 len 000133CC (76 KiB): IRAM[0m
+[0;32mI (256) spi_flash: detected chip: generic[0m
+[0;32mI (259) spi_flash: flash io: dio[0m
+[0;33mW (261) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (274) main_task: Started on CPU0[0m
+[0;32mI (284) main_task: Calling app_main()[0m
+Humidity: 57.0% Temp: 23.0C
+[0;32mI (304) main_task: Returned from app_main()[0m
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 64.0% Temp: 23.0C
+Humidity: 70.0% Temp: 23.0C
+Humidity: 76.0% Temp: 23.0C
+Humidity: 83.0% Temp: 23.0C
+Humidity: 84.0% Temp: 23.0C
+Humidity: 85.0% Temp: 23.0C
+Humidity: 85.0% Temp: 23.0C
+Humidity: 85.0% Temp: 23.0C
+Humidity: 85.0% Temp: 23.0C
+Humidity: 85.0% Temp: 23.0C
+Humidity: 85.0% Temp: 23.0C
+Humidity: 84.0% Temp: 23.0C
+Humidity: 83.0% Temp: 23.0C
+Humidity: 82.0% Temp: 23.0C
+Humidity: 81.0% Temp: 23.0C
+Humidity: 79.0% Temp: 23.0C
+Humidity: 77.0% Temp: 23.0C
+Humidity: 75.0% Temp: 23.0C
+Humidity: 73.0% Temp: 23.0C
+Humidity: 71.0% Temp: 23.0C
+Humidity: 69.0% Temp: 23.0C
+Humidity: 68.0% Temp: 23.0C
+Humidity: 67.0% Temp: 23.0C
+Humidity: 65.0% Temp: 23.0C
+Humidity: 63.0% Temp: 23.0C
+Humidity: 62.0% Temp: 23.0C
+Humidity: 60.0% Temp: 23.0C
+Humidity: 59.0% Temp: 23.0C
+Humidity: 59.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 56.0% Temp: 23.0C
+Humidity: 56.0% Temp: 23.0C
+Humidity: 56.0% Temp: 23.0C
+Humidity: 56.0% Temp: 23.0C
+Humidity: 56.0% Temp: 23.0C
+Humidity: 56.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 57.0% Temp: 23.0C
+Humidity: 58.0% Temp: 23.0C
+Humidity: 60.0% Temp: 23.0C
+Humidity: 63.0% Temp: 23.0C
+Humidity: 67.0% Temp: 23.0C
+Humidity: 70.0% Temp: 23.0C
+Humidity: 73.0% Temp: 24.0C
+Humidity: 75.0% Temp: 24.0C
+Humidity: 77.0% Temp: 24.0C
+Humidity: 79.0% Temp: 25.0C
+Humidity: 80.0% Temp: 25.0C
+Humidity: 81.0% Temp: 25.0C
+Humidity: 81.0% Temp: 25.0C
+Humidity: 82.0% Temp: 25.0C
+Humidity: 82.0% Temp: 26.0C
+Humidity: 81.0% Temp: 26.0C
+Humidity: 80.0% Temp: 26.0C
+Humidity: 77.0% Temp: 26.0C
+Humidity: 74.0% Temp: 26.0C
+Humidity: 71.0% Temp: 26.0C
+Humidity: 67.0% Temp: 26.0C
+Humidity: 64.0% Temp: 26.0C
+Humidity: 62.0% Temp: 26.0C
+Humidity: 60.0% Temp: 26.0C
+Humidity: 58.0% Temp: 26.0C
+Humidity: 57.0% Temp: 26.0C
+Humidity: 56.0% Temp: 26.0C
+Humidity: 56.0% Temp: 26.0C
+Humidity: 55.0% Temp: 25.0C
+Humidity: 55.0% Temp: 25.0C
+Humidity: 54.0% Temp: 25.0C
+Humidity: 54.0% Temp: 25.0C
+Humidity: 54.0% Temp: 25.0C
+Humidity: 53.0% Temp: 25.0C
+Humidity: 53.0% Temp: 25.0C
+Humidity: 53.0% Temp: 25.0C
+Humidity: 53.0% Temp: 25.0C
+Humidity: 53.0% Temp: 25.0C
+Humidity: 53.0% Temp: 25.0C
+Humidity: 53.0% Temp: 25.0C
+Humidity: 53.0% Temp: 25.0C
+Humidity: 53.0% Temp: 25.0C
+Humidity: 53.0% Temp: 25.0C
+Humidity: 53.0% Temp: 25.0C
+Humidity: 53.0% Temp: 25.0C
+Humidity: 53.0% Temp: 25.0C
+Humidity: 53.0% Temp: 25.0C
+Humidity: 52.0% Temp: 25.0C
+Humidity: 52.0% Temp: 25.0C
+Humidity: 52.0% Temp: 25.0C
+Humidity: 52.0% Temp: 25.0C
+Humidity: 52.0% Temp: 25.0C
+Humidity: 52.0% Temp: 25.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 52.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 53.0% Temp: 24.0C
+Humidity: 54.0% Temp: 24.0C
+Humidity: 54.0% Temp: 24.0C
+Humidity: 54.0% Temp: 24.0C
+Humidity: 54.0% Temp: 24.0C
+Humidity: 54.0% Temp: 24.0C
+Humidity: 54.0% Temp: 24.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 54.0% Temp: 23.0C
+Humidity: 55.0% Temp: 23.0C
+Humidity: 55.0% Temp: 23.0C
+Humidity: 55.0% Temp: 23.0C
+Humidity: 55.0% Temp: 23.0C
+Humidity: 55.0% Temp: 23.0C
+Humidity: 55.0% Temp: 23.0C
+Humidity: 55.0% Temp: 23.0C
+Humidity: 55.0% Temp: 23.0C
+[1;31mE (436624) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (438644) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (440664) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (442684) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (444704) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (446724) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (448744) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (450764) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (452784) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (454804) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (456824) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (458844) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (460864) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (462884) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (464904) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (466924) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (468944) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (470964) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (472984) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (475004) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (477024) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (479044) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (481064) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (483084) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (485104) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (487124) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (489144) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (491164) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (493184) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (495204) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (497224) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (499244) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (501264) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (503284) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (505304) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (507324) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (509344) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (511364) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (513384) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (515404) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (517424) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (519444) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (521464) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (523484) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (525504) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (527524) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (529544) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (531564) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (533584) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (535604) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (537624) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (539644) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (541664) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (543684) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (545704) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (547724) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (549744) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (551764) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (553784) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (555804) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (557824) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (559844) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (561864) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (563884) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (565904) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (567924) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (569944) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (571964) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (573984) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (576004) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (578024) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (580044) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (582064) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (584084) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (586104) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (588124) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (590144) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (592164) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (594184) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (596204) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (598224) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (600244) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (602264) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (604284) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (606304) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (608324) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (610344) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (612364) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (614384) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (616404) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (618424) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (620444) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (622464) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (624484) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (626504) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (628524) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (630544) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (632564) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (634584) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (636604) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (638624) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (640644) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (642664) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (644684) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (646704) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (648724) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (650744) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (652764) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (654784) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (656804) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (658824) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (660844) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (662864) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (664884) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (666904) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (668924) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (670944) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (672964) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (674984) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (677004) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (679024) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (681044) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (683064) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (685084) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (687104) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (689124) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (691144) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (693164) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (695184) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (697204) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (699224) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (701244) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (703264) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (705284) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (707304) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (709324) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (711344) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (713364) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (715384) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (717404) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (719424) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (721444) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (723464) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (725484) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (727504) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (729524) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (731544) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (733564) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (735584) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (737604) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (739624) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (741644) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (743664) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (745684) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (747704) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (749724) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (751744) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (753764) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (755784) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (757804) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (759824) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (761844) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (763864) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (765884) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (767904) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (769924) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (771944) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (773964) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (775984) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (778004) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (780024) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (782044) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (784064) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (786084) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (788104) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (790124) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (792144) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (794164) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (796184) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (798204) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (800224) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (802244) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (804264) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (806284) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (808304) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (810324) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (812344) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (814364) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (816384) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (818404) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (820424) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (822444) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (824464) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (826484) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (828504) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (830524) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (832544) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (834564) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (836584) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (838604) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (840624) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (842644) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (844664) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (846684) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (848704) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (850724) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (852744) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (854764) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (856784) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (858804) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (860824) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (862844) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (864864) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (866884) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (868904) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (870924) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (872944) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (874964) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (876984) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (879004) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (881024) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (883044) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (885064) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (887084) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (889104) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (891124) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (893144) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (895164) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (897184) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (899204) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (901224) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (903244) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (905264) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (907284) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (909304) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (911324) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (913344) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (915364) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (917384) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (919404) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (921424) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (923444) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (925464) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (927484) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (929504) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (931524) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (933544) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (935564) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (937584) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (939604) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (941624) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (943644) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (945664) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (947684) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (949704) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (951724) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (953744) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (955764) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (957784) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (959804) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (961824) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (963844) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (965864) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (967884) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (969904) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (971924) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (973944) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (975964) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (977984) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (980004) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (982024) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (984044) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (986064) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (988084) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (990104) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (992124) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (994144) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (996164) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (998184) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1000204) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1002224) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1004244) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1006264) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1008284) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1010304) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1012324) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1014344) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1016364) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1018384) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1020404) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1022424) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1024444) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1026464) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1028484) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1030504) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1032524) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1034544) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1036564) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1038584) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1040604) dht: Initialization error, problem in phase 'C'[0m
+Could not read data from sensor
+[1;31mE (1042624) dht: Ini
